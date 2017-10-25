@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("MonoBGM.ContentPipeline")]
 [assembly: AssemblyProduct("MonoBGM.ContentPipeline")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyCopyright("Copyright ©  2017")]
+[assembly: AssemblyDescription("Content Pipline for MonoBGM")]
+[assembly: AssemblyCompany("Wutipong Wongsakuldej")]
+[assembly: AssemblyCopyright("Copyright © Wutipong Wongsakuldej  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
