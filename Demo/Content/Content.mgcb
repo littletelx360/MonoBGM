@@ -1,0 +1,21 @@
+
+#----------------------------- Global Properties ----------------------------#
+
+/outputDir:bin/$(Platform)
+/intermediateDir:obj/$(Platform)
+/platform:DesktopGL
+/config:
+/profile:Reach
+/compress:False
+
+#-------------------------------- References --------------------------------#
+
+/reference:..\..\MonoBGM.ContentPipeline\bin\Debug\MonoBGM.ContentPipeline.dll
+
+#---------------------------------- Content ---------------------------------#
+
+#begin sample.ogg
+/importer:OggBGMImporter
+/processor:BGMSongProcessor
+/build:sample.ogg
+

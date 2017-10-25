@@ -3,3 +3,16 @@
 ################################################################################
 
 /MonoBGM/.vs/MonoBGM/v15
+/MonoBGM/obj/Debug
+/MonoBGM/packages
+/MonoBGM.ContentPipeline/obj/Debug
+/.vs/MonoBGM/v15
+/Demo/bin/DesktopGL/AnyCPU
+/Demo/Content/bin/DesktopGL
+/Demo/Content/obj/DesktopGL
+/Demo/obj
+/MonoBGM/bin
+/MonoBGM/obj/Release
+/MonoBGM.ContentPipeline/bin
+/MonoBGM.ContentPipeline/obj/Release
+/packages
