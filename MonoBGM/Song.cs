@@ -30,9 +30,6 @@ namespace MonoBGM
 
         public void Play()
         {
-            if (vorbisReader == null)
-                throw new InvalidOperationException("File hasn't been assigned");
-
             soundEffectInstance = new DynamicSoundEffectInstance(
                 vorbisReader.SampleRate,
                 vorbisReader.Channels == 1 ?
@@ -85,6 +82,7 @@ namespace MonoBGM
         public void Dispose()
         {
             vorbisReader.Dispose();
+            vorbisReader = null;
         }
 
         private void Reset()
