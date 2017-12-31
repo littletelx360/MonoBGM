@@ -15,4 +15,10 @@
     <copyright>Copyright 2017 Wutipong Wongsakuldej.</copyright>
     <tags>MonoGame BGM ContentPipeline</tags>
   </metadata>
+
+  <files>
+    <file src="bin\Release\MonoBGM.dll" target="lib\net451" />
+    <file src="bin\Release\NVorbis.dll" target="lib\net451" />
+  </files>
+
 </package>
