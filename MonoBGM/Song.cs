@@ -130,14 +130,10 @@ namespace MonoBGM
             for (int i = 0; i < BUFFER_SIZE; i++)
             {
                 var sample = samples[i];
-                sample = sample > 1.0f ? 1.0f :
-                    sample < -1.0f ? -1.0f :
-                    sample;
 
-                short sSample = (short)(sample * short.MaxValue);
-
-                sBuffer[i * 2 + 1] = (byte)(sSample / 256);
-                sBuffer[(i * 2)] = (byte)(sSample % 256);
+                short sValue = (short)Math.Max(Math.Min(short.MaxValue * samples[i], short.MaxValue), short.MinValue);
+                sBuffer[i * 2] = (byte)(sValue & 0xff);
+                sBuffer[i * 2 + 1] = (byte)((sValue >> 8) & 0xff);
             }
 
             soundEffectInstance.SubmitBuffer(sBuffer);
